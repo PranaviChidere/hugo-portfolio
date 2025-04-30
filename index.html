@@ -5,18 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pranavi Chidere | Portfolio</title>
   <style>
+    :root {
+      --primary-bg: #f9fbfc;
+      --card-bg: #e3edf3;
+      --text-color: #1c2b33;
+      --accent-color: #3aa6b9;
+      --header-bg: #1c2b33;
+      --footer-bg: #1c2b33;
+      --footer-text: #cbd6dc;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #1a2a3a;
-      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--primary-bg);
+      color: var(--text-color);
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: #0b1a2b;
-      padding: 20px;
+      background-color: var(--header-bg);
+      color: white;
       text-align: center;
+      padding: 30px 20px;
     }
 
     header h1 {
@@ -29,22 +40,19 @@
     }
 
     .section {
-      background-color: #273a52;
-      padding: 20px;
-      border-radius: 8px;
+      background-color: var(--card-bg);
+      padding: 25px;
+      border-radius: 10px;
       margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
 
     h2 {
-      color: #ffffff;
-    }
-
-    p, li {
-      line-height: 1.6;
+      color: var(--accent-color);
     }
 
     a {
-      color: #ff6347;
+      color: var(--accent-color);
       text-decoration: none;
     }
 
@@ -52,14 +60,19 @@
       text-decoration: underline;
     }
 
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
     footer {
-      background-color: #0b1a2b;
-      color: #aaa;
+      background-color: var(--footer-bg);
+      color: var(--footer-text);
       text-align: center;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      padding: 15px;
     }
   </style>
 </head>
@@ -67,24 +80,26 @@
 
   <header>
     <h1>Pranavi Chidere</h1>
+    <p>Developer | Innovator | Learner</p>
   </header>
 
   <main>
     <section class="section">
       <h2>About Me</h2>
       <p>
-        Hi! I'm Pranavi Chidere, a passionate software developer with interests in web development, machine learning, and backend systems. I love working with modern technologies and continuously expanding my knowledge.
+        I'm a computer science student passionate about building solutions that merge technology with everyday impact. I enjoy creating web applications, exploring machine learning, and working with APIs. Constantly learning and pushing boundaries is my thing.
       </p>
       <p>
-        Connect with me via <a href="mailto:taasritha@gmail.com">email</a> or explore my projects on <a href="https://github.com/taasritha" target="_blank">GitHub</a>.
+        Let's connect: <a href="mailto:taasritha@gmail.com">taasritha@gmail.com</a> |
+        <a href="https://github.com/taasritha" target="_blank">GitHub</a>
       </p>
     </section>
 
     <section class="section">
       <h2>Education</h2>
       <p>
-        <strong>Vellore Institute of Technology (VIT), Vellore</strong><br />
-        Integrated M.Tech in Computer Science and Engineering<br />
+        <strong>VIT, Vellore</strong><br />
+        Integrated M.Tech – Computer Science & Engineering<br />
         Expected Graduation: 2027
       </p>
     </section>
@@ -92,33 +107,28 @@
     <section class="section">
       <h2>Projects</h2>
       <ul>
-        <li>
-          <strong>COVID-19 Tracking API</strong> – A RESTful API using Node.js, Express.js, and MongoDB Atlas to track regional COVID-19 data with secure authentication and data updates.
-        </li>
-        <li>
-          <strong>MoodCure – Mental Health Web App</strong> – A full-stack platform offering mood tracking, journaling, and an AI chatbot using Streamlit and Firebase.
-        </li>
-        <li>
-          <strong>NovaPlan – Smart To-Do Planner</strong> – A productivity tool with intelligent scheduling powered by machine learning (neural networks + genetic algorithms).
-        </li>
+        <li><strong>MoodCure</strong> – A mental wellness platform with AI mood detection, journaling, and chatbot support. Built with Streamlit and Firebase.</li>
+        <li><strong>NovaPlan</strong> – A smart productivity planner that uses machine learning to suggest optimal scheduling patterns.</li>
+        <li><strong>COVID Tracker API</strong> – A secure Node.js/Express API that provides regional COVID-19 data with real-time updates and authentication.</li>
       </ul>
     </section>
 
     <section class="section">
-      <h2>Areas of Interest</h2>
+      <h2>Tech Interests</h2>
       <ul>
-        <li>Web Development (MERN Stack)</li>
-        <li>Machine Learning & Deep Learning</li>
-        <li>Natural Language Processing (NLP)</li>
-        <li>Cloud Computing & APIs</li>
+        <li>Full-Stack Web Development (MERN, Firebase)</li>
+        <li>Machine Learning & AI</li>
+        <li>NLP & Generative AI</li>
+        <li>Cloud APIs & Serverless</li>
       </ul>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Pranavi Chidere. All Rights Reserved.
+    &copy; 2025 Pranavi Chidere. Designed with passion.
   </footer>
 
 </body>
 </html>
+
 
